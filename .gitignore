@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+# raw data is DVC-tracked, not git-tracked (Step 7)
+data/raw/*
+!data/raw/.gitkeep
+# generated artifacts are reproducible outputs; keep dir, ignore contents
+artifacts/*
+!artifacts/.gitkeep
